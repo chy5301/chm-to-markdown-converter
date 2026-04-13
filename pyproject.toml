@@ -1,0 +1,30 @@
+[project]
+name = "chm-to-markdown-converter"
+version = "0.1.0"
+description = "将 CHM (Microsoft Compiled HTML Help) 文件转换为 Markdown 文档库"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "chardet>=5.2.0",
+    "html2text>=2025.4.15",
+    "lxml>=6.0.2",
+]
+
+[project.optional-dependencies]
+vector = [
+    "faiss-cpu>=1.13.2",
+    "numpy>=1.24.0",
+    "sentence-transformers>=5.2.0",
+    "torch>=2.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.14.11",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
