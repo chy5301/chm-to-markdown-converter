@@ -1,5 +1,1 @@
-blank_issues_enabled: false
-contact_links:
-  - name: 使用疑问
-    url: https://github.com/chy5301/chm-to-markdown-converter/discussions
-    about: 使用问题请到 Discussions 提问，Issue 仅用于 Bug 和功能请求
+blank_issues_enabled: true
